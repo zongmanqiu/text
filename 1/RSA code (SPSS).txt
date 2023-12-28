@@ -1,0 +1,87 @@
+* Encoding: UTF-8.
+/*根据手册复现的算法.
+PRESERVE.
+set MDISPLAY=table.
+matrix.
+/* 获取数据.
+get xraw/file=* /var=SX SY SX2 SXY SY2/missing=omit/ name=nmx.
+get y/file=* /var=ZA_3 /missing=omit /name= nmy.
+/* 设定.
+compute hc= 5 .    /* HC标准误，5表示原始标准误，0-4表示HC0-HC4.
+compute Lm={0,1,1,0,0,0;0,0,0,1,1,1}.    /*EMM估计用的L矩阵.
+compute H2={0,1,-1,0,0,0;0,0,0,2,1,0;0,0,0,1,0,-1}.    /* CLS的H矩阵，RRSC模型的约束.
+compute c={0;0;0}.    /*CLS的c矩阵，此处恰好线性约束值都为0.
+/* 开始.
+compute n=nrow(y).    /* 个案数.
+compute p=ncol(xraw).    /* 自变量数量.
+compute X={make(n,1,1),xraw}.    /* 常量1与X矩阵.
+compute YX={y,xraw}.    /* Y+X.
+compute V=(sscp(yx)-sscp(csum(yx))/n)/(n-1).    /*YX协方差矩阵.
+compute Vx=V(2:(p+1),2:(p+1)).    /*仅有X的协方差矩阵.
+/* OLS.
+compute G=inv(t(X)*X).    /*很多代码里面写作xtx1.
+compute beta=G*t(X)*Y.    /*回归系数.
+compute ypred=X*beta.    /* Y预测值.
+compute e=y-ypred.    /*残差.
+compute SSE=csum(e&**2).    /*残差平方和.
+compute ymean=csum(y)/n.    /* Y均值.
+compute SST=csum((y-ymean)&**2).    /* 总平方和.
+compute SSR=SST-SSE.    /*回归平方和.
+compute df1=p.    /*回归自由度.
+compute df2=n-1-p.    /*残差自由度.
+compute MSE=SSE/df2.    /*均方误差.
+compute F=SSR/(MSE*df1).    /*模型F值=(SSR/df1)/(SSE/df2).
+compute R2=SSR/SST.    /* R方.
+compute Adj.R2=1-(1-R2)*(n-1)/df2.    /*调整后的R方.
+compute Vbeta=G*MSE.    /*回归系数协方差矩阵.
+/* HC校正. 
+compute h=diag(x*g*t(x)).
+do if (hc=0).    /*稳健标准误.
+    compute O=e&**2.    /* Omega矩阵.
+else if (hc=1).
+    compute O=e&**2*n/df2.    
+else if (hc=2).
+    compute O=e&**2&/(1-h).
+else if (hc=3).
+    compute O=e&**2&/((1-h)&**2).
+else if (hc=4).
+    compute D={make(n,1,4),h*n/(p+1)}.    /*Delta矩阵.
+    compute D=rmin(D). 
+    compute O=(e&**2)&/((1-h)&**D).
+end if.
+do if (hc<5).
+    compute Vbeta=G*t(X)*mdiag(O)*X*G.    /*HC校正的系数协方差矩阵.
+    compute Lj={make(p,1,0),ident(p)}.
+    compute FHC=t(beta)*t(Lj)*inv(Lj*Vbeta*t(Lj))*Lj*beta/p.    /* HC方法下的F值.
+    print {hc,FHC}/format=f8.3 /title='F(HC)'/cname={'HC','FHC'}.
+end if.
+compute sbeta=sqrt(diag(Vbeta)).    /*回归系数标准误.
+compute tbeta=beta&/sbeta.    /*t值.
+compute std.beta=beta&*sqrt(diag(V)/V(1,1)).    /*标准化系数，未对多项式校正.
+compute std.beta(1,1)=0.    /*截距没有标准化系数.
+compute VIF={0;diag(inv(Vx)&*(Vx))}.    /*方差膨胀因子.
+compute D.R2=(tbeta*sqrt(MSE/SST))&**2.    /*变量R方增量,这里应该用原始标准误，别用HC的.  
+compute D.R2(1,1)=0.    /*截距没有R方增量.
+compute petasq=beta&**2&/(beta&**2+sbeta&**2*df2).    /* partial eta-sq.
+/* 输出OLS结果.
+print {R2,Adj.R2,MSE,F,df1,df2}/title='model summary'
+    /cname={'R2','Adj.R2','MSE','F','df1','df2'}/format=f8.3.
+print {beta,sbeta,tbeta,std.beta,VIF,D.R2,petasq}/format=f8.3/title='Coefficients'
+    /cname={'B','SE','t','Std.B','VIF','D.R2','P_Eta-sq'}.
+/*EMM.
+compute emmb=Lm*beta.    /*系数.
+compute emmse=sqrt(diag(Lm*Vbeta*t(Lm))).    /*标准误.
+print {emmb,emmse}/format=f8.3/title='EMM'/cname={'B','SE'}/rname={'a1','a2'}.
+/* CLS回归.
+compute k=nrow(H2).    /*约束个数.
+compute df1=p-k.    /*回归自由度.
+compute df2=n-1-p+k.    /*残差自由度.
+compute beta.CLS=beta-G*t(H2)*inv(H2*G*t(H2))*(H2*beta-c).    /*CLS回归系数.
+compute G.CLS=G-G*t(H2)*inv(H2*G*t(H2))*H2*G.    /* CLS的G矩阵.
+compute MSE.CLS=csum((y-X*beta.CLS)&**2)/df2.    /* CLS的MSE.
+compute Vbeta.CLS=G.CLS*MSE.CLS.    /*CLS的系数协方差矩阵.
+compute sbeta.CLS=sqrt(diag(Vbeta.CLS)).    /*CLS的系数标准误.
+/* 输出CLS的B和SE.
+print {beta.CLS,sbeta.CLS}/format=f8.3/title='Coefficients(CLS)'/cname={'B','SE'}.
+end matrix.
+RESTORE.
