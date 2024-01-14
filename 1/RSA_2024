@@ -1,0 +1,120 @@
+响应面课程大纲
+©2024 邱宗满
+
+1.引子
+  1.1 响应面历史
+  1.2 应用方向
+  1.3 研究工具与假设
+  1.4 差分与响应面
+  1.5 调节/交互、样条、多项式与响应面
+2.经典二阶RSA（核心）
+  2.1 一致性的假设与检验
+  2.2 SPSS+Excel（核心）
+    2.2.1 二阶RSA的一致性分析流程
+    2.2.2 分析、绘图与结果报告
+    2.2.3 作图
+    2.2.4 扩展内容
+      a) 异常值分析
+      b) 其它RSA参数
+      c) 边际均值计算
+      d) 不同的一致性模型
+      e) 其它数据指标
+    2.2.5相关论文
+  2.3-2.5 R / Mplus / AMOS
+3.二阶RSA中介
+  3.1 中介效应？间接效应？
+  3.2-3.5 SPSS / R / Mplus / AMOS
+4.	有调节的二阶RSA
+  4.1 调节效应与RSA
+  4.2-4.5 SPSS / R / Mplus / AMOS
+5.	配对二阶RSA\
+  5.1 配对数据与RSA
+  5.2-5.4 R / Mplus / AMOS
+6.	简单一致性RSA
+  6.1 简单一致性RSA
+  6.2-6.4 SPSS / R / Mplus
+7.	三阶RSA
+8.	非对称一致性RSA
+  8.1 三阶非对称一致性模型
+  8.2-8.3 SPSS / R
+9.	水平依赖一致性RSA
+  9.1 三阶水平依赖一致性模型
+  9.2-9.3 SPSS / R
+10.	其它
+11.	参考文献
+
+参考文献
+Aguinis, H., Gottfredson, R. K., & Joo, H. (2013). Best-practice recommendations for defining, identifying, and handling outliers. Organizational Research Methods, 16(2), 270–301. https://doi.org/10.1177/1094428112470848
+Bäcklander, G., & Richter, A. (2022). Relationships of task–environment fit with office workers’ concentration and team functioning in activity-based working environments. Environment and Behavior, 54, 001391652211151. https://doi.org/10.1177/00139165221115181
+Bai, Q., Lei, L., Hsueh, F.-H., Yu, X., Hu, H., Wang, X., & Wang, P. (2020). Parent-adolescent congruence in phubbing and adolescents’ depressive symptoms: A moderated polynomial regression with response surface analyses. Journal of Affective Disorders, 275, 127–135. https://doi.org/10.1016/j.jad.2020.03.156
+Baron, R. M., & Kenny, D. A. (1986). The moderator–mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations. Journal of Personality and Social Psychology, 51(6), 1173–1182. https://doi.org/10.1037/0022-3514.51.6.1173
+Barton, B., & Peat, J. (2014). Medical statistics: A guide to SPSS, data analysis and critical appraisal (2nd Ed). John Wiley & Sons.
+Belsley, D. A., Kuh, E., & Welsch, R. E. (2005). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons.
+Bohndick, C., Breetzke, J., & Rosman, T. (2022). Asking students about their fit with the university: A response surface analysis of demands-abilities fit. Active Learning in Higher Education, 1–14. https://doi.org/10.1177/14697874221124306
+Bollen, K. A., & Jackman, R. W. (1985). Regression diagnostics: An expository treatment of outliers and influential cases. Sociological Methods & Research, 13(4), 510–542. https://doi.org/10.1177/0049124185013004004
+Bu, H., Liu, I. K.-F., Qu, D., Zhou, Y., & Yu, N. X. (2023). (In)congruence in child-mother relationships and depressive symptoms in cross-boundary families. Journal of Family Psychology: JFP: Journal of the Division of Family Psychology of the American Psychological Association (Division 43), 37(7), 1037–1047. https://doi.org/10.1037/fam0001115
+Caniëls, M. C. J., & Veld, M. (2019). Employee ambidexterity, high performance work systems and innovative work behaviour: How much balance do we need? The International Journal of Human Resource Management, 30(4), 565–585. https://doi.org/10.1080/09585192.2016.1216881
+Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed). Academic Press.
+Cook, R. D., & Weisberg, S. (1982). Residuals and influence in regression. Chapman and Hall.
+Cronbach, L. J., & Furby, L. (1970). How we should measure “change”: Or should we? Psychological Bulletin, 74(1), 68–80. https://doi.org/10.1037/h0029382
+Dalal, D. K., & Zickar, M. J. (2012). Some common myths about centering predictor variables in moderated multiple regression and polynomial regression. Organizational Research Methods, 15(3), 339–362. https://doi.org/10.1177/1094428111430540
+Daoud, J. I. (2017). Multicollinearity and regression analysis. Journal of Physics: Conference Series, 949, 012009. https://doi.org/10.1088/1742-6596/949/1/012009
+Dörendahl, J., Niepel, C., & Greiff, S. (2020). Actually Getting Some Satisfaction on the Job: Need–Supply Fit of Fundamental Motives at Work. Frontiers in Psychology, 11. https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01740
+Edwards, J. R. (2002). Alternatives to difference scores: Polynomial regression analysis and response surface methodology. In F. Drasgow & N. Schmitt (Eds.), Measuring and analyzing behavior in organizations: Advances in measurement and data analysis (pp. 350–400). Jossey-Bass.
+Edwards, J. R., & Cable, D. M. (2009). The value of value congruence. Journal of Applied Psychology, 94(3), 654–677. https://doi.org/10.1037/a0014891
+Edwards, J. R., & Parry, M. E. (1993). On the use of polynomial regression equations as an alternative to difference scores in organizational research. Academy of Management, 36(6), 1577–1613. https://doi.org/10.2307/256822
+Edwards, J. R., & Parry, M. E. (2018). On the use of spline regression in the study of congruence in organizational research. Organizational Research Methods, 21(1), 68–110. https://doi.org/10.1177/1094428117715067
+Edwards, J. R., & Rothbard, N. P. (1999). Work and family stress and well-being: An examination of person-environment fit in the work and family domains. Organizational Behavior and Human Decision Processes, 77(2), 85–129. https://doi.org/10.1006/obhd.1998.2813
+Edwards, J., & Shipp, A. (2007). The relationship between person-environment fit and outcomes: An integrative theoretical framework. Perspectives on Organizational Fit, 209–258.
+Fladerer, M. P., Drozdzewski, S., Hauser, A., Lermer, E., Kuonath, A., & Frey, D. (2023). Matching by value congruence for high-quality mentoring: Evidence from a student peer mentoring program. Studies in Higher Education, 48(12), 1937–1951. https://doi.org/10.1080/03075079.2023.2217441
+Fleenor, J. W., McCauley, C. D., & Brutus, S. (1996). Self-other rating agreement and leader effectiveness. The Leadership Quarterly, 7(4), 487–506. https://doi.org/10.1016/S1048-9843(96)90003-X
+Fox, J. (2016). Applied regression analysis and generalized linear models (3rd ed). Sage.
+Gonzalez Avilés, T., Burriss, R. P., Weidmann, R., Bühler, J. L., Wünsche, J., & Grob, A. (2021). Committing to a romantic partner: Does attractiveness matter? A dyadic approach. Personality and Individual Differences, 176, 110765. https://doi.org/10.1016/j.paid.2021.110765
+Hayes, A. F. (2009). Beyond Baron and Kenny: Statistical Mediation Analysis in the New Millennium. Communication Monographs, 76(4), 408–420. https://doi.org/10.1080/03637750903310360
+Hayes, A. F. (2013). Introduction to mediation, moderation, and conditional process analysis: A  regression-based approach. Guilford Press.
+Hayes, A. F. (2017). Hacking PROCESS for estimation and probing of linear moderation of quadratic effects and quadratic moderation of linear effects. https://osf.io/ct86z
+Hayes, A. F. (2022). Introduction to mediation, moderation, and conditional process analysis: A  regression-based approach (3rd ed). Guilford Press.
+Hayes, A. F., & Rockwood, N. J. (2019). Conditional process analysis: Concepts, computation, and advances in the modeling of the contingencies of mechanisms. American Behavioral Scientist, 64(1), 19–54. https://doi.org/10.1177/0002764219859633
+Heitlinger, L., Stock-Homburg, R., & Wolf, F. D. (2022). You got the job! Understanding hiring decisions for robots as organizational members. 2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI), 530–540. https://doi.org/10.1109/HRI53351.2022.9889444
+Hoaglin, D. C., & Welsch, R. E. (1978). The hat matrix in regression and ANOVA. The American Statistician, 32(1), 17–22. https://doi.org/10.2307/2683469
+Hsueh, F.-H., Yu, K., & Wang, L. (2023). Congruency of academic and interpersonal subjective social status in relation to adolescent psychological health: The moderating role of Core self-evaluations. Current Psychology, 42(8), 6818–6833. https://doi.org/10.1007/s12144-021-01857-7
+Humberg, S., Nestler, S., & Back, M. D. (2019). Response surface analysis in personality and social psychology: Checklist and clarifications for the case of congruence hypotheses. Social Psychological and Personality Science, 10(3), 409–419. https://doi.org/10.1177/1948550618757600
+Humberg, S., Schönbrodt, F. D., Back, M. D., & Nestler, S. (2022). Cubic response surface analysis: Investigating asymmetric and level-dependent congruence effects with third-order polynomial models. Psychological Methods, 27(4), 622–649. https://doi.org/10.1037/met0000352
+Johns, G. (1981). Difference score measures of organizational behavior variables: A critique. Organizational Behavior and Human Performance, 27(3), 443–463. https://doi.org/10.1016/0030-5073(81)90033-7
+Kenny, D. A., & Cook, W. (1999). Partner effects in relationship research: Conceptual issues, analytic difficulties, and illustrations. Personal Relationships, 6(4), 433–448. https://doi.org/10.1111/j.1475-6811.1999.tb00202.x
+Kenny, D. A., & Ledermann, T. (2010). Detecting, measuring, and testing dyadic patterns in the actor–partner interdependence model. Journal of Family Psychology, 24(3), 359–366. https://doi.org/10.1037/a0019651
+Kim, J. J., Muise, A., Barranti, M., Mark, K. P., Rosen, N. O., Harasymchuk, C., & Impett, E. (2021). Are couples more satisfied when they match in sexual desire? New insights from response surface analyses. Social Psychological and Personality Science, 12(4), 487–496. https://doi.org/10.1177/1948550620926770
+Leys, C., Ley, C., Klein, O., Bernard, P., & Licata, L. (2013). Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median. Journal of Experimental Social Psychology, 49(4), 764–766. https://doi.org/10.1016/j.jesp.2013.03.013
+Lind, J., & Mehlum, H. (2010). With or without U? The appropriate test for a U-shaped relationship. Oxford Bulletin of Economics and Statistics, 72(1), 109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x
+Luan, Z., & Bleidorn, W. (2020). Self-other personality agreement and internalizing problems in adolescence. Journal of Personality, 88(3), 568–583. https://doi.org/10.1111/jopy.12511
+Murphy, K. R., Myors, B., & Wolach, A. (2014). Statistical power analysis: A simple and general model for traditional and modern hypothesis tests (4nd Ed). Routledge.
+Myers, R. H. (1990). Classical and modern regression with applications (2nd Ed). PWS-KENT.
+Myers, R. H., Khuri, A. I., & Carter, W. H. (1989). Response surface methodology: 1966–1988. Technometrics, 31(2), 137–157. https://doi.org/10.1080/00401706.1989.10488509
+Niu, Y., You, Y., Ran, Y., & Liu, J. (2023). “Unattractive = natural”: How explicit and implicit beliefs jointly affect consumer purchase of unattractive produce. Psychology & Marketing, 40(12), 2487–2503. https://doi.org/10.1002/mar.21909
+Pituch, K. A., & Stevens, J. P. (2016). Applied multivariate statistics for the social sciences: Analyses with SAS and IBM‘s SPSS (6nd Ed). Routledge.
+Qiu, Z. (2023). RSA: SPSS macro for response surface analysis. SPSS Extension Version 4.0.0. https://github.com/zongmanqiu/RSA
+Schönbrodt, F. (2016). Testing fit patterns with polynomial regression models. https://doi.org/10.31219/osf.io/ndggf
+Schönbrodt, F. D., Humberg, S., & Nestler, S. (2018). Testing similarity effects with dyadic response surface analysis. European Journal of Personality, 32(6), 627–641. https://doi.org/10.1002/per.2169
+Schönbrodt, F., & Humberg, S. (2023). RSA: Response surface analysis (0.10.6) [Computer software]. https://cran.r-project.org/web/packages/RSA/index.html
+Sewall, C. J. R., & Parry, D. A. (2021). The role of depression in the discrepancy between estimated and actual smartphone use: A cubic response surface analysis. Technology, Mind, and Behavior, 2(2). https://doi.org/10.1037/tmb0000036
+Shanock, L. R., Baran, B. E., Gentry, W. A., Pattison, S. C., & Heggestad, E. D. (2010). Polynomial regression with response surface analysis: A powerful approach for examining moderation and overcoming limitations of difference scores. Journal of Business and Psychology, 25(4), 543–554. https://doi.org/10.1007/s10869-010-9183-4
+Shanock, L. R., Baran, B. E., Gentry, W. A., Pattison, S. C., & Heggestad, E. D. (2014). Erratum to: Polynomial regression with response surface analysis: A powerful approach for examining moderation and overcoming limitations of difference scores. Journal of Business and Psychology, 29(1), 161–161. https://doi.org/10.1007/s10869-013-9317-6
+Tabachnick, B. G., & Fidell, L. S. (2013). Using multivariate statistics (6th Ed). Pearson.
+Wan Nor, A. (2015). The graphical assessment of multivariate normality using SPSS. Education in Medicine Journal, 7(2). https://doi.org/10.5959/eimj.v7i2.361
+Wang, B., Andrews, W., & de Vries, R. E. (2023). Hot and attractive? The hazardous organization tool as an instrument to avoid attracting and retaining people with low ethical standards. Journal of Business and Psychology, 38(6), 1185–1210. https://doi.org/10.1007/s10869-023-09900-z
+Wang, X., Li, A., Liu, P., & Rao, M. (2018). The relationship between psychological detachment and employee well-being: The mediating effect of self-discrepant time allocation at work. Frontiers in Psychology, 9. https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02426
+Weaver, B., & Dubois, S. (2012). SPSS macros to compare any two fitted values from a regression model. Behavior Research Methods, 44(4), 1175–1190. https://doi.org/10.3758/s13428-012-0204-2
+Zhao, X., Lynch, J., & Chen, Q. (2010). Reconsidering Baron and Kenny: Myths and Truths About Mediation Analysis. Journal of Consumer Research, 37, 197–206. https://doi.org/10.1086/651257
+Zhou, Y., Qu, D., Xu, C., Zhang, Q., & Yu, N. X. (2023). How does (in)congruence in perceived adolescent–parent closeness link to adolescent socioemotional well-being? The mediating role of resilience. Journal of Happiness Studies, 24(2), 839–856. https://doi.org/10.1007/s10902-023-00624-8
+凌春燕 & 陈毅文. (2023). 父母权威教养方式-社会规范匹配对青少年亲环境行为的作用机制：基于响应面分析. 中国临床心理学杂志, 31(6), 1346-1352,1358. https://doi.org/10.16128/j.cnki.1005-3611.2023.06.011
+唐莹莹, 蔺秀云, 殷锦绣, 何婷, 周少嘉, & 曹志涛. (2023). 亲子依恋和祖孙依恋的一致与不一致和儿童主观幸福感的关系. 心理发展与教育, 39(6), 859–868. https://doi.org/10.16187/j.cnki.issn1001-4918.2023.06.12
+张振铎, 孙谋轩, & 钟杰. (2022). 接受与给予帮助行为匹配对适应性绩效的影响. 管理科学, 35(3), 16–29.
+张珊珊, 张建新, & 周明洁. (2012). 二次响应面回归方法及其在个体−环境匹配研究中的使用. 心理科学进展, 20(6), 825–833. https://doi.org/10.3724/SP.J.1042.2012.00825
+方敏, 孙影, 吴书志, 赵天露, & 朱庆. (2022). 自主动机和受控动机匹配与大学生体适能——基于多项式回归与响应面分析. 卫生研究, 51(5), 780–786. https://doi.org/10.19813/j.cnki.weishengyanjiu.2022.05.017
+杨槐, 龚少英, 苗天长, & 李伟贺. (2021). 工作-非工作边界管理一致性与高校辅导员工作满意度的关系：工作投入的中介作用. 心理与行为研究, 19(6), 853–860.
+邹艳春, 彭坚, 侯楠, & 赵怡然. (2020). 领导-下属心理资本一致性对周边绩效的影响——工作关系与私人关系的中介作用. 心理科学, 43(3), 673–680. https://doi.org/10.16719/j.cnki.1671-6981.20200323
+陈启山 & 何静怡. (2023). 女大学生室友的愤怒特质匹配与人际关系:有调节的多项式回归模型. 心理发展与教育, 1, 55–63. https://doi.org/10.16187/j.cnki.issn1001-4918.2024.01.06
+陶厚永, & 曹伟. (2020). 多项式回归与响应面分析的原理及应用. 统计与决策, 8, 36–40. https://doi.org/10.13546/j.cnki.tjyjc.2020.08.007
+鞠佳雯, 周欣然, 梁丽婵, & 边玉芳. (2023). 父母参与的一致性与儿童主观幸福感的关系——基于多项式回归的响应面分析. 心理科学, 46(6), 1478–1485. https://doi.org/10.16719/j.cnki.1671-6981.20230626
+马丽 & 马梦媛. (2019). 边界管理匹配与工作满意度——工作—家庭促进的中介作用. 软科学, 33(10), 82–86, 92. https://doi.org/10.13956/j.ss.1001-8409.2019.10.14
+
