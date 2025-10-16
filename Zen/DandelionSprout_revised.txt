@@ -111,7 +111,7 @@ $removeparam=gclsrc,doc
 ! https://www•nytimes•com/2020/11/10/us/yellowstone-chickens•html?smid=tw-share (11/11/2020)
 $doc,removeparam=smid,domain=~amazon.*|~opinion.no
 ! https://www•norsk-tipping•no/redirector/oddsen/kjop?WT•mc_id=(...)&utm_source=nettavisen&utm_medium=ekomm&utm_content=langoddsen_Oddsartikkel_&utm_campaign=ekomm&view=lobby&rekker=[1548011,4825429,1]&spillsystem=1 (15/11/2020)
-!$doc,removeparam=/^WT\..*$/i
+
 $doc,removeparam=/^WT_.*$/i
 $doc,removeparam=/^WTmc_.*$/i
 $doc,removeparam=/^WTmc\..*$/i
