@@ -1,7 +1,5 @@
 ! 改自 DandelionSprout
 ! 原地址 https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.........txt
-! 问题在于以下规则，注销掉后，B站正常使用
-! $doc,removeparam=/^WT\..*$/i
 ! Title: ➗ Actually Legitimate URL Shortener Tool
 ! Version: 16October2025v1
 ! Expires: 12 hours
