@@ -724,7 +724,7 @@ $doc,removeparam=/^wickedid=.*$/i
 $doc,removeparam=/^wickedsource=.*$/i
 $doc,removeparam=/^wickedplacement=.*$/i
 $doc,removeparam=/^wickedkeyword=.*$/i
-$doc,removeparam=/^wtm_.*$/
+
 ! https://github.com/brave/brave-browser/issues/17451
 $removeparam=rb_clickid,doc
 ! https://github.com/brave/brave-browser/issues/17452
