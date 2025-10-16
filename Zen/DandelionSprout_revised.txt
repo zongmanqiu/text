@@ -1796,9 +1796,6 @@ $doc,image,removeparam=/^=$/
 
 ! ——— General blocking rules ——— !
 !! Scripts that solely exist to make URLs longer.
-! https://github.com/DandelionSprout/adfilt/pull/320
-! https://github.com/the1812/Bilibili-Evolved/issues/2247
-/auto-append-spmid.js
 
 ! 🐹 ——— Specific remove rules 🐹 ——— !
 !! ——— Can never be made generic ———
