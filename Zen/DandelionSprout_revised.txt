@@ -3222,12 +3222,6 @@ $removeparam=CAGPSPN
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1559915
 ||bindright.com^$removeparam=camp_id
 
-! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1559940
-||lendgo.com^$removeparam=rate
-||lendgo.com^$removeparam=apr
-$removeparam=rt,domain=lendgo.com|bilibili.com
-||lendgo.com^$removeparam=lt
-
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1784
 $removeparam=lid,domain=baidu.com|clickserve.dartsearch.net|flipkart.com
 
@@ -3370,11 +3364,6 @@ $doc,removeparam=t,domain=rakuten.com|steamcdn-a.akamaihd.net|elprecio.es|adress
 ! https://market•yandex•ru/promo/hasbro_special?clid=602&cpa-perf=1#c
 ||yandex.$removeparam=clid
 $removeparam=cpa-perf
-
-! https://support•google•com/websearch/answer/9351707?p=featured_snippets&hl=en&visit_id=637669631265857080-3305857145&rd=1
-! https://github.com/DandelionSprout/adfilt/pull/354
-! https://github.com/the1812/Bilibili-Evolved/issues/1207
-$removeparam=visit_id,doc,domain=bilibili.com|google.*
 
 ! https://github.com/AdguardTeam/AdguardFilters/pull/100181
 ||cc.loginfra.com/cc$removeparam=a
@@ -4398,10 +4387,6 @@ $doc,removeparam=user_email_address
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-6556014
 $doc,removeparam=cn,domain=twitter.com|x.com
-
-! https://github.com/AdguardTeam/AdguardFilters/commit/5d415635140b5b6f2173c923104d53e473dd67fd
-! https://github.com/uBlockOrigin/uAssets/pull/10010
-$doc,domain=bilibili.com|querie.me,removeparam=timestamp
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-6854367
 $removeparam=dyn,domain=clink2.com|dlink2.com,doc
