@@ -110,9 +110,6 @@ $removeparam=gclsrc,doc
 $doc,removeparam=smid,domain=~amazon.*|~opinion.no
 ! https://www•norsk-tipping•no/redirector/oddsen/kjop?WT•mc_id=(...)&utm_source=nettavisen&utm_medium=ekomm&utm_content=langoddsen_Oddsartikkel_&utm_campaign=ekomm&view=lobby&rekker=[1548011,4825429,1]&spillsystem=1 (15/11/2020)
 
-$doc,removeparam=/^WT_.*$/i
-$doc,removeparam=/^WTmc_.*$/i
-$doc,removeparam=/^WTmc\..*$/i
 ! https://twitter•com/PlanNorge/status/1181537299038953473?ref_src=twsrc%2525255Etfw%2525257Ctwcamp%2525255Etweetembed%2525257Ctwterm%2525255E1181537299038953473&ref_url=(...) (14/11/2020; does not seem to work with AdGuard)
 $removeparam=ref_src,doc
 $doc,removeparam=ref_url,domain=~randalls.com
